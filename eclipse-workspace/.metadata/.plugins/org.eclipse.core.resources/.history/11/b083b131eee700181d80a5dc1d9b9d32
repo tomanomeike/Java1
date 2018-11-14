@@ -1,0 +1,57 @@
+package lt.bt.Testas;
+import java.util.Scanner;
+
+public class Uzduotis1 {
+	public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        System.out.println("hello world");
+    }
+}
+
+
+
+class AreaTriangleDemo {
+   public static void main(String args[]) {   
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.println("Iveskite trikampio ploti:");
+      double base = scanner.nextDouble();
+
+      System.out.println("Iveskite trikampio aukstine:");
+      double height = scanner.nextDouble();
+
+      //Area = (width*height)/2
+      double area = (base* height)/2;
+      System.out.println("Trikampio plotas yra: " + area);      
+   }
+}
+
+class AreaOfRectangle {
+	   public static void main (String[] args)
+	   {
+		   Scanner scanner = new Scanner(System.in);
+		   System.out.println("Iveskite staciakampio ilgi:");
+		   double length = scanner.nextDouble();
+		   System.out.println("Iveskite staciakampio ploti:");
+		   double width = scanner.nextDouble();
+		   //Area = length*width;
+		   double area = length*width;
+		   System.out.println("Staciakmpio plotas yra:"+area);
+	   }
+	}
+
+class CircleDemo
+{
+   static Scanner sc = new Scanner(System.in);
+   public static void main(String args[])
+   {
+      System.out.print("Iveskite spinduli: ");
+      /*We are storing the entered radius in double
+       * because a user can enter radius in decimals
+       */
+      double radius = sc.nextDouble();
+      //Area = PI*radius*radius
+      double area = Math.PI * (radius * radius);
+      System.out.println("Apskritimo plotas yra: " + area);
+   }
+}

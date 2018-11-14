@@ -1,0 +1,97 @@
+package lt.bt.Testas;
+import java.util.Scanner;
+
+
+
+public class Uzduotis1 {
+	public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
+}
+
+
+
+class TrikampioPlotas {
+   public static void main(String args[]) {   
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.println("Iveskite trikampio ploti:");
+      double base = scanner.nextDouble();
+
+      System.out.println("Iveskite trikampio aukstine:");
+      double height = scanner.nextDouble();
+      double area = (base* height)/2;
+      System.out.println("Trikampio plotas yra: " + area);      
+   }
+}
+
+class StaciakmpioPlotas {
+	   public static void main (String[] args)
+	   {
+		   Scanner scanner = new Scanner(System.in);
+		   System.out.println("Iveskite staciakampio ilgi:");
+		   double length = scanner.nextDouble();
+		   System.out.println("Iveskite staciakampio ploti:");
+		   double width = scanner.nextDouble();
+		   double area = length*width;
+		   System.out.println("Staciakampio plotas yra:"+area);
+	   }
+	}
+
+class apskrtitimoPlotas {
+   static Scanner sc = new Scanner(System.in);
+   public static void main(String args[])
+   {
+      System.out.print("Iveskite spinduli: ");
+      double radius = sc.nextDouble();
+      double area = Math.PI * (radius * radius);
+      System.out.println("Apskritimo plotas yra: " + area);
+   }
+}
+
+
+class KvadratineLygtis {
+
+    
+  public static void main(String[] Strings) {
+
+        Scanner input = new Scanner(System.in);
+
+            System.out.print("Skaicius a: ");
+            double a = input.nextDouble();
+            System.out.print("Skaicius b: ");
+            double b = input.nextDouble();
+            System.out.print("Skaiscius c: ");
+            double c = input.nextDouble();
+
+            double result = b * b - 4.0 * a * c;
+
+            if (result > 0.0) {
+                double r1 = (-b + Math.pow(result, 0.5)) / (2.0 * a);
+                double r2 = (-b - Math.pow(result, 0.5)) / (2.0 * a);
+                System.out.println("Sprendinys " + r1 + " ir " + r2);
+            } else if (result == 0.0) {
+                double r1 = -b / (2.0 * a);
+                System.out.println("Sprendinys yra " + r1);
+            } else {
+                System.out.println("Lygtis neturi sprendiniu");
+            }
+
+    }
+}
+
+class LyginisNelyginis
+{
+   public static void main(String args[])
+   {
+      int x;
+      System.out.println("Iveskite skaiciu, kad patikrintumete jis lyginis ar nelyginis:");
+      Scanner in = new Scanner(System.in);
+      x = in.nextInt();
+     
+      if (x % 2 == 0)
+         System.out.println("Lyginis");
+      else
+         System.out.println("Nelyginis.");
+   }
+}

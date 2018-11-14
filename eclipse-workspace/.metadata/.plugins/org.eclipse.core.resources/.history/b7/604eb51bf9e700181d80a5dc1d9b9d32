@@ -1,0 +1,67 @@
+package lt.bt.Testas;
+import java.lang.*;
+import java.util.Scanner;
+
+
+
+public class Uzduotis1 {
+	public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
+}
+
+
+
+class AreaTriangleDemo {
+   public static void main(String args[]) {   
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.println("Iveskite trikampio ploti:");
+      double base = scanner.nextDouble();
+
+      System.out.println("Iveskite trikampio aukstine:");
+      double height = scanner.nextDouble();
+      double area = (base* height)/2;
+      System.out.println("Trikampio plotas yra: " + area);      
+   }
+}
+
+class AreaOfRectangle {
+	   public static void main (String[] args)
+	   {
+		   Scanner scanner = new Scanner(System.in);
+		   System.out.println("Iveskite staciakampio ilgi:");
+		   double length = scanner.nextDouble();
+		   System.out.println("Iveskite staciakampio ploti:");
+		   double width = scanner.nextDouble();
+		   double area = length*width;
+		   System.out.println("Staciakampio plotas yra:"+area);
+	   }
+	}
+
+class CircleDemo {
+   static Scanner sc = new Scanner(System.in);
+   public static void main(String args[])
+   {
+      System.out.print("Iveskite spinduli: ");
+      double radius = sc.nextDouble();
+      double area = Math.PI * (radius * radius);
+      System.out.println("Apskritimo plotas yra: " + area);
+   }
+}
+
+
+
+public class MathDemo {
+
+   public static void main(String[] args) {
+
+      // get two double numbers numbers
+      double x = 9;
+      double y = 25;
+
+      // print the square root of these doubles
+      System.out.println("Math.sqrt(" + x + ")=" + Math.sqrt(x));
+      System.out.println("Math.sqrt(" + y + ")=" + Math.sqrt(y));
+   }
+}
