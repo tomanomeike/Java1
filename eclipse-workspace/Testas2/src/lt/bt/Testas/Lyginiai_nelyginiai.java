@@ -14,7 +14,7 @@ public class Lyginiai_nelyginiai {
 			String st=br.readLine();
 			System.out.println(st);
 			//System.out.println(st.charAt(1));
-			double sum = 0; 
+			int num; 
 			for(int i=0; i<st.length(); i++){
 				if((Double.valueOf(String.valueOf(st.charAt(i)))%2)==0)
 					System.out.println("even");
