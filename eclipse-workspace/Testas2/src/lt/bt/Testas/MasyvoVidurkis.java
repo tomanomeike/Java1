@@ -23,17 +23,24 @@ public class MasyvoVidurkis {
 		for( i = 0; i < array.length; i++){
 			sum=sum+array[i];
 		}
-		System.out.println(sum);
+		System.out.println("suma yra:" + sum);
 		double average = sum/array.length;
-		System.out.println(average );
+		System.out.println("vidurkis:" + average );
 		
 		 int [] newArray = new int [array.length];
 		  for (i=0;i<newArray.length;i++) {
 			  if(array[i]>average) {
 		             newArray[i] = array[i];
-		             System.out.println(newArray[i]);  
+		             System.out.println("skaiciai didesni uz vidurki:" + newArray[i]);  
 			  }
           } 
+		  int [] newSecondArray = new int [array.length];
+		  for (i=0;i<newArray.length;i++) {
+			  if(array[i]>0) {
+		             newArray[i] = array[i];
+		             System.out.println("teigiamas skaicius:" + newArray[i]);  
+			  }
+          }   
 	}
 
 }

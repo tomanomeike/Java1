@@ -1,9 +1,15 @@
 package lt.bt.Testas;
 
+import java.io.IOException;
 import java.util.Scanner;
 
+
 public class Skaiciai {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		skaiciai();
+	}
+	
+	private static void skaiciai() throws IOException{
 		Scanner scanner = new Scanner(System.in);
 	   	System.out.println("Iveskite skaiciu:");
 	   	int number = scanner.nextInt();
